@@ -1,0 +1,62 @@
+/* style.css */
+
+/* Aturan umum untuk kedua halaman */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Halaman 1 dengan latar belakang pink */
+.page1 {
+  background-color: pink;
+}
+
+/* Halaman 2 dengan latar belakang ungu */
+.page2 {
+  background-color: purple;
+}
+
+/* Gaya untuk ikon api kecil */
+.flame {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* Gaya tombol */
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Gaya notifikasi */
+#notification {
+  margin-top: 20px;
+  color: red;
+  display: none;
+  font-size: 1rem;
+}
+
+/* Gaya judul dan paragraf */
+h1 {
+  margin: 0 0 20px 0;
+}
+
+p {
+  margin: 0;
+  font-size: 1.2rem;
+}

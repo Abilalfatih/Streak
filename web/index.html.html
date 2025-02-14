@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman 1</title>
+  <style>
+    body {
+      background-color: pink;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .flame {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+    }
+    .button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+    #notification {
+      margin-top: 20px;
+      color: red;
+      display: none;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Ikon api kecil berwarna pink -->
+  <svg class="flame" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <path fill="pink" d="M32 2C20 2 12 10 12 22c0 7 4 14 10 17v17c0 2 2 4 4 4s4-2 4-4V39h8v17c0 2 2 4 4 4s4-2 4-4V39c6-3 10-10 10-17C52 10 44 2 32 2z"/>
+  </svg>
+
+  <h1>Apakah kamu siap dengan angka 200?</h1>
+  <div>
+    <button class="button" id="siapBtn">Siap</button>
+    <button class="button" id="tidakBtn">Tidak</button>
+  </div>
+  <div id="notification">Harus Menekan Opsi Siap</div>
+
+  <script>
+    document.getElementById('siapBtn').addEventListener('click', function() {
+      window.location.href = "page2.html";
+    });
+    document.getElementById('tidakBtn').addEventListener('click', function() {
+      document.getElementById('notification').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
